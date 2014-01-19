@@ -77,7 +77,7 @@ def _main():
       while True:
         overwrite = raw_input("\nWARNING: {0} exits! Overwrite? [y|n] ".format(minFile))
         if overwrite == "yes" or overwrite == "y":
-          print "Overwriting."
+          print "Overwriting.\n"
           break
         elif overwrite == "no" or overwrite == "n":
           print "Exiting."
@@ -112,10 +112,11 @@ def _main():
 
       # Don't bother to compile the javascript if we arent' overwriting an existing file.
       if os.path.exists(minFile) and not opts.quiet and not opts.printOut:
+        continueOuterLoop = False
         while True:
           overwrite = raw_input("\nWARNING: {0} exits! Overwrite? [y|n] ".format(minFile))
           if overwrite == "yes" or overwrite == "y":
-            print "Overwriting."
+            print "Overwriting.\n"
             break
           elif overwrite == "no" or overwrite == "n":
             print "Continuing to next"
