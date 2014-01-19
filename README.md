@@ -6,4 +6,5 @@ This is a one off project that is basically just a modified verison of code prov
 
 ### Usage
 python javscript-minify.py -f path/to/javascript/script.js
-python javscript-minify.py --help
+
+python javscript-minify.py --help 
