@@ -6,9 +6,6 @@ Take either a file, or a directory containing
   write the out the mini javascript. This is
   merely a modified verison of the script
   provided by Google.
-
-Corwin Brown, 2014
-blakfeld@gmail.com
 '''
 
 import httplib, urllib, sys, os
